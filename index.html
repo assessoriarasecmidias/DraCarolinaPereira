@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Carolina Pereira | Cirurgia Plástica Facial em Piracicaba</title>
+    <meta name="description" content="Cirurgia plástica facial em Piracicaba com Dra. Carolina Pereira. Procedimentos para contorno, definição e rejuvenescimento de face e pescoço.">
+    
+    <!-- Google Fonts: Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#F7F3EE',
+                            surface: '#EDE3D7',
+                            dark: '#171717',
+                            muted: '#665F58',
+                            gold: '#B08A4A',
+                            goldLight: '#C5A059'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background-color: #F7F3EE;
+            color: #171717;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#F7F3EE]/90 backdrop-blur-md border-b border-[#EDE3D7]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-xl md:text-2xl font-semibold tracking-wide text-brand-dark">
+                Dra. Carolina Pereira
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-muted">
+                <a href="#procedimentos" class="hover:text-brand-dark transition-colors">Procedimentos</a>
+                <a href="#abordagem" class="hover:text-brand-dark transition-colors">Abordagem</a>
+                <a href="#resultados" class="hover:text-brand-dark transition-colors">Resultados</a>
+                <a href="#sobre" class="hover:text-brand-dark transition-colors">Sobre</a>
+                <a href="#clinica" class="hover:text-brand-dark transition-colors">Clínica</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contato" class="bg-brand-dark text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-brand-gold transition-colors duration-300">
+                    Agendar minha consulta
+                </a>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button id="menu-btn" class="md:hidden text-brand-dark focus:outline-none p-2" aria-label="Abrir menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-brand-bg border-b border-[#EDE3D7] px-6 py-6 shadow-lg flex flex-col space-y-4">
+            <a href="#procedimentos" class="mobile-link text-brand-dark font-medium text-lg">Procedimentos</a>
+            <a href="#abordagem" class="mobile-link text-brand-dark font-medium text-lg">Abordagem</a>
+            <a href="#resultados" class="mobile-link text-brand-dark font-medium text-lg">Resultados</a>
+            <a href="#sobre" class="mobile-link text-brand-dark font-medium text-lg">Sobre</a>
+            <a href="#clinica" class="mobile-link text-brand-dark font-medium text-lg">Clínica</a>
+            <div class="pt-2">
+                <a href="#contato" class="mobile-link block text-center bg-brand-dark text-white py-3 rounded-md font-medium">
+                    Agendar minha consulta
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Coluna de Texto -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-block text-xs md:text-sm font-semibold tracking-widest uppercase text-brand-gold border-b border-brand-gold/40 pb-1">
+                        Cirurgia Plástica Facial em Piracicaba
+                    </span>
+                    
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight text-brand-dark">
+                        Mais definição para o rosto. Mais confiança para se reconhecer no espelho.
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-brand-muted max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Cirurgia plástica com foco em face e pescoço, contorno facial e rejuvenescimento, com uma abordagem que une precisão técnica, definição e harmonia.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contato" class="w-full sm:w-auto bg-brand-dark text-white px-8 py-4 rounded-md text-base font-medium hover:bg-brand-gold transition-colors duration-300 text-center shadow-sm">
+                            Agendar minha consulta
+                        </a>
+                    </div>
+                    
+                    <div class="pt-4 text-xs tracking-wide text-brand-muted uppercase font-medium">
+                        Dra. Carolina Pereira, Cirurgiã Plástica
+                    </div>
+                </div>
+
+                <!-- Coluna de Imagem / Hero Asset -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-brand-gold/10 rounded-2xl transform rotate-1"></div>
+                        <div class="relative bg-brand-surface rounded-xl overflow-hidden shadow-xl aspect-[4/5] flex items-center justify-center border border-brand-gold/20">
+                            <img src="SaveClip.App_747736353_18607017211054771_2917930652853606433_n-removebg-preview.png" alt="Dra. Carolina Pereira - Cirurgiã Plástica Facial" class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DOR -->
+    <section class="py-20 bg-brand-surface/40 border-y border-brand-surface">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">
+                Quando algo no seu rosto incomoda, você percebe todos os dias.
+            </h2>
+            
+            <div class="space-y-6 text-brand-muted text-base sm:text-lg font-light leading-relaxed">
+                <p>
+                    A papada pode esconder a definição do rosto. A flacidez pode mudar o contorno do pescoço. O excesso de pele nas pálpebras pode deixar o olhar pesado. Pequenas alterações também podem mudar a forma como você se percebe no espelho.
+                </p>
+                <p class="font-medium text-brand-dark">
+                    A questão não é mudar quem você é. É entender o que pode ser melhorado de forma adequada ao seu rosto e às suas características.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ABORDAGEM -->
+    <section id="abordagem" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold border-b border-brand-gold/40 pb-1">
+                        Uma Abordagem Voltada Para Face e Pescoço
+                    </span>
+                    
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark">
+                        Precisão para valorizar aquilo que já é seu.
+                    </h2>
+                    
+                    <div class="space-y-4 text-brand-muted font-light leading-relaxed">
+                        <p>
+                            Cada rosto possui características próprias. Por isso, a indicação de um procedimento deve considerar anatomia, proporção, contorno e o resultado que você deseja alcançar.
+                        </p>
+                        <p>
+                            A Dra. Carolina trabalha com procedimentos voltados à definição, harmonia e rejuvenescimento facial, aliando conhecimento técnico a uma visão que considera também a autoestima de cada paciente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <blockquote class="bg-brand-surface p-8 sm:p-12 rounded-xl border-l-4 border-brand-gold shadow-sm relative">
+                        <p class="font-serif text-2xl sm:text-3xl italic text-brand-dark leading-snug">
+                            "Não trabalho apenas com estética, mas sim com autoestima."
+                        </p>
+                        <footer class="mt-4 text-xs font-semibold tracking-widest uppercase text-brand-gold">
+                            — Dra. Carolina Pereira
+                        </footer>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROCEDIMENTOS -->
+    <section id="procedimentos" class="py-24 bg-brand-surface/40 border-y border-brand-surface">
+        <div class="max-w-7xl mx-auto px-6 space-y-16">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold">Áreas de Atuação</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark">
+                    Encontre o procedimento relacionado ao que você deseja transformar.
+                </h2>
+            </div>
+
+            <!-- Grid de Procedimentos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-surface hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-surface flex items-center justify-center text-brand-gold font-serif text-lg">01</div>
+                        <h3 class="font-serif text-2xl text-brand-dark">Lipo de Papada</h3>
+                        <p class="text-brand-muted text-sm font-light leading-relaxed">
+                            Para quem busca mais definição no contorno do queixo e pescoço e deseja tratar o acúmulo de gordura na região.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-surface">
+                        <a href="#contato" class="text-xs font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors inline-flex items-center gap-2">
+                            Saiba mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-surface hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-surface flex items-center justify-center text-brand-gold font-serif text-lg">02</div>
+                        <h3 class="font-serif text-2xl text-brand-dark">Blefaroplastia</h3>
+                        <p class="text-brand-muted text-sm font-light leading-relaxed">
+                            Para tratar excesso de pele e bolsas nas pálpebras, buscando um olhar mais descansado e uma aparência mais rejuvenescida.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-surface">
+                        <a href="#contato" class="text-xs font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors inline-flex items-center gap-2">
+                            Saiba mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-surface hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-surface flex items-center justify-center text-brand-gold font-serif text-lg">03</div>
+                        <h3 class="font-serif text-2xl text-brand-dark">Cervicoplastia</h3>
+                        <p class="text-brand-muted text-sm font-light leading-relaxed">
+                            Para pacientes que apresentam flacidez na região do pescoço e buscam melhorar o contorno cervical.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-surface">
+                        <a href="#contato" class="text-xs font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors inline-flex items-center gap-2">
+                            Saiba mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-surface hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-surface flex items-center justify-center text-brand-gold font-serif text-lg">04</div>
+                        <h3 class="font-serif text-2xl text-brand-dark">Bichectomia</h3>
+                        <p class="text-brand-muted text-sm font-light leading-relaxed">
+                            Procedimento voltado à remoção das bolsas de Bichat, buscando maior definição dos contornos faciais.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-surface">
+                        <a href="#contato" class="text-xs font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors inline-flex items-center gap-2">
+                            Saiba mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-surface hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-surface flex items-center justify-center text-brand-gold font-serif text-lg">05</div>
+                        <h3 class="font-serif text-2xl text-brand-dark">Harmonização Facial</h3>
+                        <p class="text-brand-muted text-sm font-light leading-relaxed">
+                            Procedimentos destinados a ajustes e preenchimentos que buscam melhorar a harmonia entre os traços.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-surface">
+                        <a href="#contato" class="text-xs font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors inline-flex items-center gap-2">
+                            Saiba mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-brand-bg p-8 rounded-xl border border-brand-surface hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-surface flex items-center justify-center text-brand-gold font-serif text-lg">06</div>
+                        <h3 class="font-serif text-2xl text-brand-dark">Preenchimento</h3>
+                        <p class="text-brand-muted text-sm font-light leading-relaxed">
+                            Procedimentos voltados à criação ou recuperação de volume e definição em regiões específicas do rosto.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-surface">
+                        <a href="#contato" class="text-xs font-semibold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors inline-flex items-center gap-2">
+                            Saiba mais <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO RESULTADOS REAIS -->
+    <section id="resultados" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold border-b border-brand-gold/40 pb-1">Resultados Reais</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark">
+                    O resultado precisa ser visto, não apenas prometido.
+                </h2>
+                <p class="text-brand-muted font-light text-base sm:text-lg">
+                    Conheça casos reais e acompanhe transformações faciais documentadas pela Dra. Carolina.
+                </p>
+            </div>
+
+            <!-- Imagens Reais de Resultados -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- img 01: Face e Pescoço -->
+                <div class="bg-brand-surface rounded-xl overflow-hidden shadow-sm aspect-[4/3] relative border border-brand-gold/20 group">
+                    <img src="01.jpg" alt="Antes e Depois - Face e Pescoço" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-white">
+                        <span class="block font-serif text-xl font-medium">Face e Pescoço</span>
+                        <span class="block text-xs text-brand-surface/80 uppercase tracking-wider">Antes e Depois</span>
+                    </div>
+                </div>
+
+                <!-- img 02: Alta Definição -->
+                <div class="bg-brand-surface rounded-xl overflow-hidden shadow-sm aspect-[4/3] relative border border-brand-gold/20 group">
+                    <img src="02.jpg" alt="Antes e Depois - Alta Definição" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-white">
+                        <span class="block font-serif text-xl font-medium">Alta Definição</span>
+                        <span class="block text-xs text-brand-surface/80 uppercase tracking-wider">Antes e Depois</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center pt-4">
+                <a href="#contato" class="inline-block border border-brand-dark text-brand-dark px-8 py-4 rounded-md text-sm font-medium hover:bg-brand-dark hover:text-white transition-all duration-300">
+                    Ver resultados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DEPOIMENTOS -->
+    <section class="py-24 bg-brand-surface/40 border-y border-brand-surface">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold">Prova Social</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">
+                A experiência de quem já passou por esse processo.
+            </h2>
+            <p class="text-brand-muted font-light text-base sm:text-lg max-w-xl mx-auto">
+                Histórias reais de pacientes que compartilharam suas experiências e percepções sobre a transformação.
+            </p>
+
+            <div class="bg-brand-bg rounded-xl p-8 sm:p-12 border border-brand-surface shadow-sm space-y-4">
+                <i data-lucide="video" class="w-12 h-12 mx-auto text-brand-gold stroke-[1.5]"></i>
+                <span class="block font-serif text-xl text-brand-dark font-medium">[DEPOIMENTOS DE PACIENTES EM VÍDEO]</span>
+                <p class="text-xs text-brand-muted uppercase tracking-wider">Uso exclusivo de depoimentos reais disponíveis nos assets</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- img 03: Dra. Carolina Pereira -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-surface rounded-xl overflow-hidden shadow-sm aspect-[4/5] relative border border-brand-gold/20 flex items-center justify-center">
+                        <img src="03.png" alt="Dra. Carolina Pereira" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold border-b border-brand-gold/40 pb-1">Dra. Carolina Pereira</span>
+                    
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark">
+                        Uma cirurgiã plástica com olhar especializado para face e pescoço.
+                    </h2>
+                    
+                    <div class="space-y-4 text-brand-muted font-light leading-relaxed">
+                        <p>
+                            Dra. Carolina Pereira atua em Piracicaba com foco em procedimentos faciais, contorno, definição e rejuvenescimento.
+                        </p>
+                        <p>
+                            Sua comunicação profissional destaca a atuação em face e pescoço, a busca por alta definição e a educação do paciente sobre procedimentos, técnicas e cuidados.
+                        </p>
+                        <p>
+                            Além da atuação médica, mantém uma rotina de atualização profissional e compartilha conhecimento para ajudar seus pacientes a tomarem decisões mais conscientes sobre seus procedimentos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CLÍNICA -->
+    <section id="clinica" class="py-24 bg-brand-surface/40 border-y border-brand-surface">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold border-b border-brand-gold/40 pb-1">Onde Você Será Atendida</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark">
+                    Clínica Harmonie Piracicaba
+                </h2>
+                <p class="text-brand-muted font-light text-base sm:text-lg">
+                    Atendimento presencial em Piracicaba, São Paulo.
+                </p>
+            </div>
+
+            <!-- img 04: Fachada Clínica Harmonie -->
+            <div class="bg-brand-bg rounded-xl overflow-hidden shadow-sm aspect-[16/9] max-w-4xl mx-auto relative border border-brand-gold/20">
+                <img src="04.jpg" alt="Fachada da Clínica Harmonie Piracicaba" class="w-full h-full object-cover object-center">
+            </div>
+
+            <div class="text-center pt-2">
+                <a href="#contato" class="inline-block text-xs font-semibold tracking-widest uppercase text-brand-dark hover:text-brand-gold transition-colors">
+                    Ver localização &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAQ ESTRATÉGICO -->
+    <section class="py-24">
+        <div class="max-w-4xl mx-auto px-6 space-y-12">
+            <div class="text-center space-y-4">
+                <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold">Dúvidas Frequentes</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">
+                    Esclareça suas principais dúvidas
+                </h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Item FAQ 1 -->
+                <div class="bg-brand-surface/50 p-6 sm:p-8 rounded-xl border border-brand-surface space-y-2">
+                    <h3 class="font-serif text-xl text-brand-dark font-medium">Quais procedimentos faciais são realizados?</h3>
+                    <p class="text-brand-muted text-sm font-light leading-relaxed">
+                        A atuação foca em procedimentos cirúrgicos e estéticos para face e pescoço, incluindo lipo de papada, blefaroplastia, cervicoplastia, bichectomia, harmonização facial e preenchimentos.
+                    </p>
+                </div>
+
+                <!-- Item FAQ 2 -->
+                <div class="bg-brand-surface/50 p-6 sm:p-8 rounded-xl border border-brand-surface space-y-2">
+                    <h3 class="font-serif text-xl text-brand-dark font-medium">Como saber qual procedimento é indicado para mim?</h3>
+                    <p class="text-brand-muted text-sm font-light leading-relaxed">
+                        A indicação exata é definida durante a consulta de avaliação individual, onde são consideradas sua anatomia, proporções e objetivos pessoais.
+                    </p>
+                </div>
+
+                <!-- Item FAQ 3 -->
+                <div class="bg-brand-surface/50 p-6 sm:p-8 rounded-xl border border-brand-surface space-y-2">
+                    <h3 class="font-serif text-xl text-brand-dark font-medium">Como funciona a avaliação?</h3>
+                    <p class="text-brand-muted text-sm font-light leading-relaxed">
+                        É um momento dedicado ao atendimento individual na Clínica Harmonie, em Piracicaba, para entender suas características e possibilidades de tratamento com total segurança e clareza.
+                    </p>
+                </div>
+
+                <!-- Item FAQ 4 -->
+                <div class="bg-brand-surface/50 p-6 sm:p-8 rounded-xl border border-brand-surface space-y-2">
+                    <h3 class="font-serif text-xl text-brand-dark font-medium">Quanto tempo leva para aparecer o resultado final?</h3>
+                    <p class="text-brand-muted text-sm font-light leading-relaxed">
+                        No caso específico da lipo de papada, por exemplo, o briefing menciona aproximadamente 60 dias para a visualização completa do resultado final após a recuperação e acomodação dos tecidos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CTA FINAL / CONTATO -->
+    <section id="contato" class="py-24 bg-brand-surface/40 border-t border-brand-surface">
+        <div class="max-w-3xl mx-auto px-6 text-center space-y-8">
+            <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold border-b border-brand-gold/40 pb-1">Seu Primeiro Passo</span>
+            
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-dark">
+                Entenda o que pode fazer sentido para o seu rosto.
+            </h2>
+            
+            <p class="text-brand-muted font-light text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+                Agende sua consulta e converse sobre suas características, objetivos e possibilidades de tratamento.
+            </p>
+            
+            <div class="pt-2">
+                <a href="#contato" class="inline-block bg-brand-dark text-white px-10 py-5 rounded-md text-base font-medium hover:bg-brand-gold transition-colors duration-300 shadow-sm">
+                    Agendar minha consulta
+                </a>
+            </div>
+            
+            <p class="text-xs text-brand-muted tracking-wide pt-2">
+                Converse com a equipe e dê o primeiro passo para entender quais possibilidades fazem sentido para o seu caso.
+            </p>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="py-12 bg-brand-dark text-brand-bg border-t border-brand-dark">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif text-xl font-medium tracking-wide text-white">Dra. Carolina Pereira</span>
+                <p class="text-xs text-brand-muted pt-1">Cirurgia Plástica Facial • Piracicaba, SP</p>
+            </div>
+            <div class="text-xs text-brand-muted">
+                &copy; 2026 Dra. Carolina Pereira. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- CTA Flutuante Mobile -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-brand-bg/95 backdrop-blur-md border-t border-brand-surface p-4 shadow-lg">
+        <a href="#contato" class="block w-full bg-brand-dark text-white text-center py-3.5 rounded-md text-sm font-medium hover:bg-brand-gold transition-colors">
+            Agendar minha consulta
+        </a>
+    </div>
+
+    <!-- Script para Menu Mobile -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <!-- Inicialização Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
